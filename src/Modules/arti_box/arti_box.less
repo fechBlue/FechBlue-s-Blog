@@ -1,0 +1,150 @@
+// arti-box模块
+:local(.artiBox) {
+  margin-bottom: 4%;
+  box-shadow: 0 0 4px #a09e9e;
+  display: inline-block;
+  width: 100%;
+  .arti-box-top {
+    background-image: url(../../Files/header.jpg);
+    background-position: 30% 50%;
+    background-size: 100%;
+    .article-title {
+      font-size: 30px;
+      text-align: center;
+      border-left: 4px solid #2ca6cb;
+      padding: 1% 0;
+      a {
+        color: #2ca6cb;
+        &:hover {
+          color: #ff851c;
+        }
+      }
+    }
+    .article-info {
+      position: relative;
+      height: 30px;
+      .time {
+        position: absolute;
+        display: inline-block;
+        margin-right: 2%;
+        right: 11%;
+        img {
+          width: 17px;
+        }
+        i {
+          font-size: 13px;
+          color: #FFF;
+          font-style: normal;
+          vertical-align: middle;
+          line-height: 1.5;
+        }
+      }
+      .author {
+        position: absolute;
+        display: inline-block;
+        width: 10%;
+        right: 0;
+        font-size: 13px;
+        font-family: 'Segoe UI';
+        line-height: 1.5;
+        i {
+          font-style: normal;
+          color: #FFF;
+        }
+        a {
+          color: #2ca6cb;
+          &:hover {
+            color: #ff851c;
+          }
+        }
+      }
+    }
+  }
+  .arti-box-bottom {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    .intro-box {
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 2%;
+      .intro {
+        color: #454343;
+        font-size: 15px;
+        padding: 2% 3%;
+        line-height: 2;
+      }
+      .read-more {
+        padding: 0 3%;
+        float: none;
+        a {
+          background: #e1e1e1;
+          padding: 0.5% 2%;
+          border-radius: 50px;
+          font-size: 14px;
+          display: inline-block;
+          color: #333;
+          transition: all 0.5s;
+          font-family: 'Segoe UI';
+          &:hover {
+            background: #2ca6cb;
+            color: white;
+          }
+        }
+      }
+    }
+    .label-box {
+      padding-bottom: 1%;
+      padding-top: 1%;
+      padding-left: 3%;
+      padding-right: 3%;
+      img, a {
+        vertical-align: middle;
+      }
+      img {
+        width: 18px;
+        &:last-child {
+          width: 23px;
+        }
+      }
+      a {
+        font-size: 16px;
+        color: #2ca6cb;
+      }
+      .label-left {
+        a {
+          padding: 4% 6%;
+          display: inline-block;
+        }
+        img {
+          width: 23px;
+        }
+        .label-tech {
+          a {
+            background: #ddd;
+            transition: all 0.5s;
+            margin-left: 7%;
+            &:hover {
+              background: #2ca6cb;
+              color: #FFF;
+            }
+          }
+        }
+      }
+      .label-right {
+        text-align: right;
+        a {
+          margin-left: 1%;
+          padding: 1% 0%;
+          display: inline-block;
+          font-family: 'Segoe UI';
+          &:hover {
+            color: #ff851c;
+          }
+        }
+        img {
+          width: 27px;
+        }
+      }
+    }
+  }
+}
